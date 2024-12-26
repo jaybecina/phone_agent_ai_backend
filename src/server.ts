@@ -37,7 +37,7 @@ export class Server {
     console.log("Listening on " + port);
 
     this.app.get("/", (req: Request, res: Response) => {
-      const env_vars = `OPENAI_ORGANIZATION_ID: ${process.env.OPENAI_ORGANIZATION_ID} OPENAI_APIKEY: ${process.env.OPENAI_APIKEY} RETELL_API_KEY: {process.env.RETELL_API_KEY}`;
+      const env_vars = `OPENAI_ORGANIZATION_ID: ${process.env.OPENAI_ORGANIZATION_ID} OPENAI_APIKEY: ${process.env.OPENAI_APIKEY} RETELL_API_KEY: ${process.env.RETELL_API_KEY}`;
       res.send(`Connected to port: ${port}. Enviroment Vars: ${env_vars}`);
     });
   }
