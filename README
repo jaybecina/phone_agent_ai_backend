@@ -8,21 +8,13 @@ This is a Node.js TypeScript project that integrates with Retell AI and OpenAI t
 
 1. Clone the repository:
 
-   ```bash
-   git clone phone-agent-ai-backend
+   `git clone phone-agent-ai-backend`
 
-   ```
 
-2. ```cd phone-agent-ai-backend
+2. `cd phone-agent-ai-backend`
 
-   ```
+3. `npm install`
 
-3. ```npm install
-
-   ```
-
-4. ```ngrok http 8080
-
-   ```
+4. `ngrok http 8080`
 
 5. Add the URL of ngrok with wss://[url of ngrok]/llm-websocket into your Retell AI agent custom LLM.
